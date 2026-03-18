@@ -1,0 +1,58 @@
+/* 整體頁面設定 */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;   /* 水平置中 */
+    align-items: center;       /* 垂直置中 */
+    background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 主容器 */
+div {
+    min-width: 100px;          /* 最小寬度 */
+    max-width: 200px;          /* 最大寬度 */
+    width: 100%;
+    background: #ffffff;
+    padding: 40px 60px;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+/* 標題 */
+h3 {
+    margin-bottom: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/* 按鈕 */
+input[type="button"] {
+    padding: 8px 18px;
+    border: 1px solid #333;
+    background: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.2s ease;
+}
+
+input[type="button"]:hover {
+    background: white;
+    color: #333;
+}
+
+/* 清單 */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
+}
+
+li {
+    margin: 6px 0;
+    color: #555;
+    font-size: 14px;
+}
