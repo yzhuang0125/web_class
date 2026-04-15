@@ -1,0 +1,11 @@
+
+.row {
+    display: flex;
+    gap: 20px; /* 兩個圖之間的間距，可自行調整 */
+}
+
+.column {
+    flex: 50%; /* 讓兩欄平均分配寬度 */
+    padding: 10px;
+    height: 300px;
+}

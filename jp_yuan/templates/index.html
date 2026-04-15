@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <!--<link rel = "stylesheet" href = "style.css">-->
+    </head>
+    <body>
+        
+        <div>
+            <div id="line-chart" style="width:600px;height:250px;float: left;"></div>
+            <div id="line-chart2" style="width:600px;height:250px;float: left;"></div>
+        </div> 
+                
+        <div id="exchangeData" style="visibility: hidden;">{{exchangeData}}</div>    
+        <div id="exchangeData" style="visibility: hidden;">{{exchangeData}}</div>
+
+        <script src="https://cdn.plot.ly/plotly-2.24.1.min.js" charset="utf-8"></script>
+        <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    </body>
+</html>
