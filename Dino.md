@@ -8,6 +8,7 @@ Object.defineProperty(Runner.prototype, 'gameOver', {
 ```
 
 ### 加入文字
+1. 
 ```javascript
 [...document.querySelectorAll('*')].forEach(el => {
   if (el.childNodes.length === 1 && el.innerText.includes('按下空格')) {
@@ -15,5 +16,5 @@ Object.defineProperty(Runner.prototype, 'gameOver', {
   }
 });
 ```
-
+2.
 直接在Element的HTML找到對應的程式碼改
