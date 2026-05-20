@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f4f8;
+  color: #1f2937;
+}
+
+.app-shell {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+header h1 {
+  margin: 0 0 10px;
+  font-size: 2rem;
+}
+
+header p {
+  margin: 0;
+  color: #475569;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 2.1fr 1fr;
+  gap: 24px;
+}
+
+.canvas-panel,
+.info-panel {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 16px 30px rgba(15, 23, 42, 0.08);
+  padding: 18px;
+}
+
+canvas {
+  width: 100%;
+  max-width: 100%;
+  border: 2px solid #cbd5e1;
+  border-radius: 14px;
+  background: #e2e8f0;
+}
+
+.status-card,
+.question-card,
+.chart-card {
+  margin-bottom: 18px;
+}
+
+.status-card h2,
+.question-card h2,
+.chart-card h2 {
+  margin: 0 0 10px;
+  font-size: 1.1rem;
+  color: #0f172a;
+}
+
+#options {
+  display: grid;
+  gap: 10px;
+}
+
+.option-btn {
+  border: none;
+  background: #2563eb;
+  color: #ffffff;
+  padding: 12px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  text-align: left;
+}
+
+.option-btn:hover {
+  background: #1d4ed8;
+}
+
+.option-btn.correct {
+  background: #16a34a;
+}
+
+.option-btn.wrong {
+  background: #dc2626;
+}
+
+@media (max-width: 960px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}

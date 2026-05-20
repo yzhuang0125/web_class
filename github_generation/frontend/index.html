@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>期末專題：辦公室英語會話遊戲</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.plot.ly/plotly-2.36.2.min.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header>
+      <h1>辦公室英語會話遊戲</h1>
+      <p>點擊畫布移動角色，靠近 NPC 後與他們對話，選出最合適的英文回應。</p>
+    </header>
+
+    <main>
+      <section class="canvas-panel">
+        <canvas id="officeCanvas" width="640" height="480"></canvas>
+      </section>
+
+      <section class="info-panel">
+        <div class="status-card">
+          <h2>遊戲狀態</h2>
+          <p id="playerStatus">請點擊畫布移動角色。</p>
+          <p>分數：<span id="score">0</span></p>
+        </div>
+
+        <div class="question-card">
+          <h2>對話</h2>
+          <p id="npcContext">靠近 NPC 後開始對話。</p>
+          <p id="npcQuestion"></p>
+          <div id="options"></div>
+        </div>
+
+        <div class="chart-card">
+          <h2>答題統計</h2>
+          <div id="scoreChart"></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
