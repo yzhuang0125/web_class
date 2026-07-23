@@ -12,7 +12,7 @@ Object.defineProperty(Runner.prototype, 'gameOver', {
 ```javascript
 [...document.querySelectorAll('*')].forEach(el => {
   if (el.childNodes.length === 1 && el.innerText.includes('按下空格')) {
-    el.innerText += ' - 1131533黃詠珍';
+    el.innerText += '加上文字';
   }
 });
 ```
